@@ -1,0 +1,324 @@
+// 1580px
+@include xxxxxlg-xxxxxxlg {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .main {
+        padding-top: 121.92px;
+    }
+    .title {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        &.sm {
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        &.big {
+            padding-bottom: 30px;
+            margin-bottom: 60px;
+        }
+    }
+    .circle {
+        width: 380px;
+        height: 380px;
+    }
+    @include header-xxxxxlg-xxxxxxlg;
+    @include nav-xxxxxlg-xxxxxxlg;
+
+}
+// 1450px
+@include xxxxlg-xxxxxlg {
+    // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    .main {
+        padding-top: 104.5px;
+    }
+    .title {
+        &::before {
+            height: 2px;
+        }
+        &.big {
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .button {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 20px 16px;
+    }
+    .circle {
+        width: 320px;
+        height: 320px;
+    }
+    @include header-xxxlg-xxxxlg;
+    @include nav-xxxlg-xxxxlg;
+    @include hero-xxxlg-xxxxlg;
+    @include article-xxxlg-xxxxlg;
+    @include about-xxxlg-xxxxlg;
+    @include intro-xxxlg-xxxxlg;
+
+}
+// 1250px
+@include xlg-xxlg-extra {
+    @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 30px;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 22px;
+        &.sm {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .title {
+        &::before {
+            max-width: 300px;
+        }
+        &.big {
+            padding-bottom: 16px;
+            margin-bottom: 30px;
+        }
+    }
+    .main {
+        padding-top: 90.8px;
+    }
+    .button {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 18px 14px;
+    }
+    .circle {
+        width: 260px;
+        height: 260px;
+    }
+    @include header-xlg-xxlg;
+    @include nav-xlg-xxlg;
+    @include hero-xlg-xxlg;
+    @include discover-xlg-xxlg;
+    @include info-xlg-xxlg;
+    @include about-xlg-xxlg;
+    @include intro-xlg-xxlg;
+    @include footer-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+    @include hero-lg-xlg;
+    @include article-lg-xlg;
+    @include intro-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+    h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .title {
+        &::before {
+            max-width: 250px;
+        }
+        &.big {
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+    }
+    .circle {
+        width: 220px;
+        height: 220px;
+    }
+    @include hero-md-lg;
+    @include article-md-lg;
+    @include discover-md-lg;
+    @include info-md-lg;
+    @include about-md-lg;
+    @include intro-md-lg;
+    @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+    .auto__container {
+        padding: 0 20px;
+    }
+    p {
+        &.sm {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    @include hero-sm-md;
+    @include info-sm-md;
+    @include footer-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+    .title {
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+        &::before {
+            height: 1px;
+            max-width: 200px;
+        }
+        &.big {
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+        }
+        &.sm {
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+        }
+    }
+    .circle {
+        width: 180px;
+        height: 180px;
+        h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    @include hero-sm-md-extra;
+    @include info-sm-md-extra;
+    @include intro-sm-md-extra;
+
+}
+// 540px
+@include xsm-sm  {
+    h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+        &.sm {
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+    .button {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 18px 10px;
+    }
+    .main {
+        padding-top: 71.09px;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+        h3 {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+    @include header-xsm-sm;
+    @include nav-xsm-sm;
+    @include hero-xsm-sm;
+    @include article-xsm-sm;
+    @include discover-xsm-sm;
+    @include info-xsm-sm;
+    @include intro-xsm-sm;
+    @include footer-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm  {
+    .title {
+        &.big {
+            padding-bottom: 10px;
+            margin-bottom: 24px;
+        }
+    }
+    p {
+        &.sm {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    @include hero-xxsm-xsm;
+    @include discover-xxsm-xsm;
+    @include info-xxsm-xsm;
+    @include about-xxsm-xsm;
+    @include intro-xxsm-xsm;
+    @include footer-xxsm-xsm;
+
+}
+// 390px
+@include xxxsm-xxsm  {
+    .auto__container {
+        padding: 0 16px;
+    }
+    .button {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @include article-xxxsm-xxsm;
+}
+

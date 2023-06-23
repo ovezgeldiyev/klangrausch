@@ -1,0 +1,157 @@
+.discover {
+    padding-bottom: 130px;
+    &__inner {
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -8px;
+        }
+    }
+    &Item {
+        width: calc(25% - 16px);
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            opacity: 1;
+            img {
+                transform: scale(1.06);
+            }
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 63%;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include fullImage;
+                transition: .3s ease;
+            }
+        }
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h6 {
+            text-transform: uppercase;
+        }
+        span {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            box-shadow: $shadow;
+            border: 1px solid $white;
+            background-color: $mainDark;
+            border-radius: 50%;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 11px;
+                height: 11px;
+                border-top: 1px solid $white;
+                border-right: 1px solid $white;
+                content: "";
+                transform: translate(-70%, -50%) rotate(45deg);
+            }
+        }
+    }
+}
+// 1180px
+@mixin discover-xlg-xxlg {
+    .discover {
+        padding-bottom: 90px;
+        &__inner {
+            &-row {
+                margin: 0 -5px;
+            }
+        }
+        &Item {
+            margin: 5px;
+            width: calc(25% - 10px);
+            &__image {
+                margin-bottom: 15px;
+            }
+            span {
+                width: 24px;
+                height: 24px;
+                &::before {
+                    width: 9px;
+                    height: 9px;
+                }
+            }
+        }
+    }
+}
+// 930px
+@mixin discover-md-lg {
+    .discover {
+        padding-bottom: 60px;
+        &__inner {
+            &-row {
+                margin: 0 -8px;
+            }
+        }
+        &Item {
+            margin: 8px 8px 20px 8px;
+            width: calc(50% - 16px);
+        }
+    }
+}
+// 540px
+@mixin discover-xsm-sm {
+    .discover {
+        padding-bottom: 40px;
+        &__inner {
+            &-row {
+                margin: 0 -4px;
+            }
+        }
+        &Item {
+            margin: 4px 4px 10px 4px;
+            width: calc(50% - 8px);
+            span {
+                width: 20px;
+                height: 20px;
+                &::before {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+}
+// 440px
+@mixin discover-xxsm-xsm {
+    .discover {
+        padding-bottom: 30px;
+        &__inner {
+            &-row {
+                margin: 0;
+            }
+        }
+        &Item {
+            margin: 0 0 20px 0;
+            width: 100%;
+            &:last-child {
+                margin: 0;
+            }
+            span {
+                width: 20px;
+                height: 20px;
+                &::before {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+}
